@@ -29,12 +29,12 @@ const images = [
 ];
 
 
-imgList = images.map(image => {
-    document.querySelector('#gallery')
-        .insertAdjacentHTML('beforeend', `<li><img src="${image.url}" alt="${image.alt}" width = 300></li>`);
+
+const ulList = document.querySelector('#gallery');
+
+const imgList = images.map(image => {
+  return `<li><img src="${image.url}" alt="${image.alt}" width = 300></li>`; 
 })
-
-
-
-/
+.join("");
+ulList.insertAdjacentHTML("afterbegin", imgList);
 
