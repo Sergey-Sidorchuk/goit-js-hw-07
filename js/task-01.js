@@ -48,7 +48,7 @@
 const itemsEl = document.querySelectorAll('.item');
 console.log(`В списке ${itemsEl.length} категории`);
 
-Array.prototype.forEach.call(itemsEl, (element) => {
+itemsEl.forEach.call(itemsEl, (element) => {
     const title = element.querySelector('h2').innerHTML;
     const itemsLength = element.querySelectorAll('li').length;
 

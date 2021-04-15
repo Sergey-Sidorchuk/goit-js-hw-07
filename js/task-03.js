@@ -29,11 +29,12 @@ const images = [
 ];
 
 
-images.map(image => {
+imgList = images.map(image => {
     document.querySelector('#gallery')
         .insertAdjacentHTML('beforeend', `<li><img src="${image.url}" alt="${image.alt}" width = 300></li>`);
 })
 
 
 
+/
 
